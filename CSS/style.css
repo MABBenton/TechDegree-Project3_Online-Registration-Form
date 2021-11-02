@@ -1,71 +1,105 @@
 /* Element Selectors */
+body {
+  font-family: 'Lato', sans-serif;
+}
 
+input:focus {
+  outline: solid 2px rgb(50, 50, 159);
+}
+select:focus {
+  outline: solid 2px rgb(50, 50, 159);
+}
+
+textarea:focus {
+  outline: solid 2px rgb(50, 50, 159);
+} 
+
+button:focus {
+  outline: solid 2px rgb(50, 50, 159);
+}
 
 input, 
 select, 
 textarea {
   background: rgb(238, 238, 240);
   border: none;   
-  margin: 3% auto;  
+  margin: 3% 0;  
 }
 
 p, select, footer {
-    color: gray;   
+  color: gray;   
 }
 
 p {
-  margin: 20px 0 6px 0;  
+  margin: 20px 0 6px 0; 
+  line-height: 25px; 
 }
 
 button {
-    background: rgb(93, 194, 194);
-    color: white;  
-    width: 95vw;  
-    margin: 5% 0 8% 0;
-    padding: 17px 0;
-    font-size: 1.3em;
-    border-radius: 3%;
-    border: none;
+  background: rgb(93, 194, 194);
+  color: white;  
+  width: 95vw;  
+  margin: 5% auto 8%;
+  padding: 17px 0;
+  font-size: 1.3em;
+  border-radius: 3%;
+  border: none;
 }
 
 fieldset {
   border: none;  
 }
 
-h2, 
-.section-heading,
-label {
-  color: rgb(40, 40, 58);    
-}
-
 footer {
   text-align: center;
   font-style: italic;
+  margin-bottom: 8%;
 }
 
 /* ID selectors */
 
 #plain-text {
-    margin-bottom: 30px;  
+  margin-bottom: 30px;  
 }
 
+#zip {
+  width: 40%; 
+}
 /* Attribute selectors*/
 
 input[type="text"], select {
-    display: block;  
-    margin-top: 5px;  
-    width: 95%;
-    height: 40px;
+  display: block;  
+  margin-top: 5px;  
+  width: 95%;
+  height: 40px;
 }
 
-input[placeholder="Required"] {
-  font-style: italic;   
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 3%;
+}
+
+::placeholder {
+  font-style: italic; 
+  text-align: right;  
+  padding-right: 10px;
 }
 
 /* Class selectors */
 
+h2, 
+.section-heading,
+label {
+  color: rgb(43, 43, 94);    
+}
+
+.section-heading {
+  font-size: 1.4em;  
+  font-weight: bold; 
+}
+
 .header {
-  background: rgb(40, 40, 58);
+  background: rgb(43, 43, 94);
   text-align: center;
   padding: 30px 0;
   color: white;
@@ -78,15 +112,14 @@ input[placeholder="Required"] {
   text-align: center;   
 }
 
-.sub-heading_p {
-  padding-bottom: 30px;  
-  margin-bottom: 7%;
-  border-bottom: double 7px rgb(40, 40, 58);  
+.sub-heading {
+  margin-bottom: 2%;
 }
 
-.section-heading {
-  font-size: 1.4em;  
-  font-weight: bold;  
+.sub-heading_p {
+  padding-bottom: 35px; 
+  margin: 2% 0 7%;
+  border-bottom: double 7px rgb(43, 43, 94);  
 }
 
 .contact {

@@ -23,11 +23,19 @@ button:focus {
 }
 
 input, 
-select, 
-textarea {
+select {
   background: rgb(238, 238, 240);
   border: none;   
   margin: 3% 0;  
+}
+
+textarea {
+  background: white;
+  border: none;
+  margin: 3% auto 3% 0;
+  padding: 0;
+  min-width: 280px;
+  max-width: 700px;
 }
 
 p, select, footer {
@@ -39,6 +47,10 @@ p {
   line-height: 25px; 
 }
 
+fieldset {
+  border: none;  
+}
+
 button {
   background: rgb(93, 194, 194);
   color: white;  
@@ -48,10 +60,6 @@ button {
   font-size: 1.3em;
   border-radius: 3%;
   border: none;
-}
-
-fieldset {
-  border: none;  
 }
 
 footer {
@@ -74,7 +82,6 @@ footer {
 input[type="text"], select {
   display: block;  
   margin-top: 5px;  
-  width: 95%;
   height: 40px;
 }
 
@@ -87,6 +94,10 @@ input[type="checkbox"] {
   font-style: italic; 
   text-align: right;  
   padding-right: 10px;
+}
+
+label[for="full-name"] {
+  margin-top: 20px;
 }
 
 /* Class selectors */
@@ -121,20 +132,23 @@ label {
 }
 
 .sub-heading_p {
-  padding-bottom: 35px; 
+  padding-bottom: 30px; 
   margin: 2% 0 7%;
   border-bottom: double 7px rgb(43, 43, 94);  
 }
 
 .contact {
-  border-bottom: solid 2px rgb(40, 40, 58);
-  padding-bottom: 6%;
-  margin-bottom: 7%;  
+  padding: 0;
 }
 
 .newsletter-section {
   background: rgb(249, 245, 225);
-  padding-top: 6px;
+  padding-top: 15px;
+  border-top: solid 2px rgb(40, 40, 58);
+}
+
+.newsletter {
+  min-width: 304px;
 }
 
 /*Media Query*/

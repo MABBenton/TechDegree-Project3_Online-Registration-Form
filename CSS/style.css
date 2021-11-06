@@ -26,7 +26,6 @@ input,
 select {
   background: rgb(238, 238, 240);
   border: none;   
-  margin: 3% 0;  
 }
 
 textarea {
@@ -43,7 +42,7 @@ p, select, footer {
 }
 
 p {
-  margin: 20px 0 6px 0; 
+  margin: 13px 0 6px 0; 
   line-height: 25px; 
 }
 
@@ -54,7 +53,7 @@ fieldset {
 button {
   background: rgb(93, 194, 194);
   color: white;  
-  width: 95vw;  
+  width: 100%;  
   margin: 5% auto 8%;
   padding: 17px 0;
   font-size: 1.3em;
@@ -87,7 +86,12 @@ input[type="text"], select {
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin-right: 3%;
+  margin: 4% 3% 4% 0;
+}
+
+textarea::placeholder {
+  text-align: left;
+  padding-left: 10px;
 }
 
 ::placeholder {
@@ -143,7 +147,7 @@ label {
 
 .newsletter-section {
   background: rgb(249, 245, 225);
-  padding-top: 15px;
+  padding-top: 20px;
   border-top: solid 2px rgb(40, 40, 58);
 }
 

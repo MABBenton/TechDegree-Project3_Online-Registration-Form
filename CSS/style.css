@@ -34,7 +34,6 @@ textarea {
   margin: 3% auto 3% 0;
   padding: 0;
   min-width: 280px;
-  max-width: 700px;
 }
 
 p, select, footer {
@@ -54,7 +53,7 @@ button {
   background: rgb(93, 194, 194);
   color: white;  
   width: 100%;  
-  margin: 5% auto 8%;
+  margin: 10px auto 30px;
   padding: 17px 0;
   font-size: 1.3em;
   border-radius: 3%;
@@ -86,7 +85,7 @@ input[type="text"], select {
 
 input[type="radio"],
 input[type="checkbox"] {
-  margin: 4% 3% 4% 0;
+  margin: 10px 3px 10px 0;
 }
 
 textarea::placeholder {
@@ -137,7 +136,7 @@ label {
 
 .sub-heading_p {
   padding-bottom: 30px; 
-  margin: 2% 0 7%;
+  margin: 2% 0 30px;
   border-bottom: double 7px rgb(43, 43, 94);  
 }
 
@@ -159,7 +158,28 @@ label {
 
 @media screen and (min-width:768px) {
   
+  .sub-heading,
+  .sub-heading_p {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
+  .container,
+  .newsletter-section,
+  button {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  input[type="text"], select {
+    width: 70%;
+    margin-left: 30%;
+    display: inline-block;
+  }
 
+  textarea {
+    width: 100%;
+  }  
 }

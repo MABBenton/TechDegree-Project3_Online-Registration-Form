@@ -108,7 +108,7 @@ textarea::placeholder {
 
 /* Class selectors */
 
-.flex-pair, .secheading-1 {
+.flex-pair {
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -126,6 +126,10 @@ label {
 .section-heading {
   font-size: 1.4em;  
   font-weight: bold; 
+}
+
+.secheading-1 {
+  margin-left: .5em;
 }
 
 .header {
@@ -172,11 +176,15 @@ label {
 /*Media Query*/
 
 @media screen and (min-width:768px) {
+  .secheading-1 {
+    margin-left: 112px;
+  }
+
   .container {
     width: 70%;
   }
 
-  .container .flex-pair, .secheading-1 {
+  .container .flex-pair {
     display: flex;
     flex-direction: row;
     margin: initial;

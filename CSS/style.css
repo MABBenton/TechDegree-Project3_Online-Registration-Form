@@ -5,6 +5,8 @@
 /* Element Selectors */
 body {
   font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+  max-width: 768px;
 }
 
 input:focus {
@@ -52,8 +54,8 @@ fieldset {
 button {
   background: rgb(93, 194, 194);
   color: white;  
-  width: 100%;  
-  margin: 10px auto 30px;
+  width: 95%;  
+  margin: 10px 10px 30px 10px;
   padding: 17px 0;
   font-size: 1.3em;
   border-radius: 3%;
@@ -79,8 +81,9 @@ footer {
 
 input[type="text"], select {
   display: block;  
-  margin-top: 5px;  
+  margin: 5px 0 8px; 
   height: 40px;
+  width: 100%;
 }
 
 input[type="radio"],
@@ -127,7 +130,9 @@ label {
 
 .sub-heading, 
 .sub-heading_p {
-  text-align: center;   
+  text-align: center;  
+  padding-left: .3em; 
+  padding-right: .3em;
 }
 
 .sub-heading {
@@ -136,7 +141,7 @@ label {
 
 .sub-heading_p {
   padding-bottom: 30px; 
-  margin: 2% 0 30px;
+  margin: 2% 3% 30px 3%;
   border-bottom: double 7px rgb(43, 43, 94);  
 }
 
@@ -157,7 +162,21 @@ label {
 /*Media Query*/
 
 @media screen and (min-width:768px) {
+  .container .flex-pair {
+    flex-direction: row;
+  }
   
+  .container input {
+    flex-grow: 1;
+    flex-basis: 75%;
+  }
+  
+  .container label {
+    flex-basis: 25%;
+    height: 40px;
+    margin: auto 0;
+  }
+
   .sub-heading,
   .sub-heading_p {
     width: 70%;
@@ -165,7 +184,6 @@ label {
     margin-left: auto;
   }
 
-  .container,
   .newsletter-section, 
   button {
     width: 70%;
@@ -173,16 +191,16 @@ label {
     margin-right: auto;
   }
 
-  button {
-    margin-left: 15%;
-  }
-
-  input[type="text"], select {
+  /*input[type="text"], select {
     width: 70%;
     margin-left: 30%;
-  }
+  }*/
 
   textarea {
     width: 100%;
   }  
+
+  button {
+    margin-left: 15%;
+  }
 }

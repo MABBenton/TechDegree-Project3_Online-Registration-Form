@@ -24,6 +24,10 @@ button:focus {
   outline: solid 2px rgb(50, 50, 159);
 }
 
+input, select, textarea, button {
+  border-radius: 3px;
+}
+
 input, 
 select {
   background: rgb(238, 238, 240);
@@ -58,7 +62,6 @@ button {
   margin: 10px 10px 30px 10px;
   padding: 17px 0;
   font-size: 1.3em;
-  border-radius: 3%;
   border: none;
 }
 
@@ -78,11 +81,13 @@ footer {
   width: 40%; 
   margin-right: 60%;
 }
+
 /* Attribute selectors*/
 
 input[type="text"], select { 
   margin: 5px 0 8px; 
   height: 40px;
+  width: 100%;
 }
 
 input[type="radio"],
@@ -101,11 +106,16 @@ textarea::placeholder {
   padding-right: 10px;
 }
 
-label[for="full-name"] {
-  margin-top: 20px;
+/* Class selectors */
+
+.flex-pair, .secheading-1 {
+  margin-left: .5em;
+  margin-right: .5em;
 }
 
-/* Class selectors */
+.flex-pair1 {
+  margin-top: 20px;
+}
 
 h2, 
 .section-heading,
@@ -152,6 +162,7 @@ label {
   background: rgb(249, 245, 225);
   padding-top: 20px;
   border-top: solid 2px rgb(40, 40, 58);
+  margin-top: 1em;
 }
 
 .newsletter {
@@ -165,9 +176,10 @@ label {
     width: 70%;
   }
 
-  .container .flex-pair {
+  .container .flex-pair, .secheading-1 {
     display: flex;
     flex-direction: row;
+    margin: initial;
   }
   
   .container input, 

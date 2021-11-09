@@ -83,7 +83,6 @@ footer {
 input[type="text"], select { 
   margin: 5px 0 8px; 
   height: 40px;
-  width: 300px;
 }
 
 input[type="radio"],
@@ -171,7 +170,8 @@ label {
     flex-direction: row;
   }
   
-  .container input {
+  .container input, 
+  .container select {
     flex-grow: 1;
     flex-basis: 75%;
   }
@@ -179,7 +179,16 @@ label {
   .container label {
     flex-basis: 25%;
     height: 40px;
-    margin: auto 5% auto 0;
+    margin: auto 0;
+  }
+
+  input[type="text"], select {
+    margin: initial;
+  }
+
+  label[for="full-name"], 
+  input[id="full-name"] {
+    margin-top: 20px;
   }
 
   .sub-heading,
@@ -187,6 +196,11 @@ label {
     width: 70%;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  #zip {
+    margin-right: initial;
+    max-width: 25%;
   }
 
   .newsletter-section, 

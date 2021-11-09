@@ -39,7 +39,7 @@ textarea {
   border: none;
   margin: 3% auto 3% 0;
   padding: 0;
-  min-width: 280px;
+  min-width: 295px;
 }
 
 p, select, footer {
@@ -109,8 +109,8 @@ textarea::placeholder {
 /* Class selectors */
 
 .flex-pair, .secheading-1 {
-  margin-left: .5em;
-  margin-right: .5em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .flex-pair1 {

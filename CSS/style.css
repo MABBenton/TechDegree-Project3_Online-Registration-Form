@@ -9,19 +9,21 @@ body {
   max-width: 768px;
 }
 
-input:focus {
-  outline: solid 2px rgb(50, 50, 159);
-}
-select:focus {
-  outline: solid 2px rgb(50, 50, 159);
+input, textarea, select, button {
+  outline: 2px solid transparent;
+  box-shadow: none;
+  border: none;
 }
 
-textarea:focus {
-  outline: solid 2px rgb(50, 50, 159);
-} 
-
+input:focus, 
+select:focus, 
+textarea:focus, 
 button:focus {
-  outline: solid 2px rgb(50, 50, 159);
+  outline: solid 2px rgb(50, 50, 159); 
+  transition-property: outline;
+  transition-delay: .2s;
+  transition-duration: 2.5s;
+  transition-timing-function: ease-in;
 }
 
 input, select, textarea, button {

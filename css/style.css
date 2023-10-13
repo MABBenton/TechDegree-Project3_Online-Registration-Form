@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Element Selectors */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+input, textarea, select, button {
+  outline: 2px solid transparent;
+  box-shadow: none;
+  border: none;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus, 
+button:focus {
+  outline: solid 2px rgb(50, 50, 159); 
+  transition-property: outline;
+  transition-delay: .2s;
+  transition-duration: 2.5s;
+  transition-timing-function: ease-in;
+}
+
+input, select, textarea, button {
+  border-radius: 3px;
+}
+
+input, 
+select {
+  background: rgb(238, 238, 240);
+  border: none;   
+}
+
+textarea {
+  background: white;
+  border: none;
+  margin: 3% auto 3% 0;
+  padding: 0;
+  min-width: 295px;
+}
+
+p, select, footer {
+  color: gray;   
+}
+
+p {
+  margin: 13px 0 6px 0; 
+  line-height: 25px; 
+}
+
+fieldset {
+  border: none;  
+}
+
+button {
+  background: rgb(93, 194, 194);
+  color: white;  
+  width: 95%;  
+  margin: 10px 10px 30px 10px;
+  padding: 17px 0;
+  font-size: 1.3em;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 8%;
+}
+
+/* ID selectors */
+
+#plain-text {
+  margin-bottom: 30px;  
+}
+
+#zip {
+  width: 40%; 
+  margin-right: 60%;
+}
+
+/* Attribute selectors*/
+
+input[type="text"], select { 
+  margin: 5px 0 8px; 
+  height: 40px;
+  width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 10px 3px 10px 0;
+}
+
+textarea::placeholder {
+  text-align: left;
+  padding-left: 10px;
+}
+
+::placeholder {
+  font-style: italic; 
+  text-align: right;  
+  padding-right: 10px;
+}
+
+/* Class selectors */
+
+.flex-pair {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.flex-pair1 {
+  margin-top: 20px;
+}
+
+h2, 
+.section-heading,
+label {
+  color: rgb(43, 43, 94);    
+}
+
+.section-heading {
+  font-size: 1.4em;  
+  font-weight: bold; 
+}
+
+.secheading-1 {
+  margin-left: .5em;
+}
+
+.header {
+  background: rgb(43, 43, 94);
+  text-align: center;
+  padding: 30px 0;
+  color: white;
+  font-size: 1.5em;
+  margin: 0 0 30px 0;
+}
+
+.sub-heading, 
+.sub-heading_p {
+  text-align: center;  
+  padding-left: .3em; 
+  padding-right: .3em;
+}
+
+.sub-heading {
+  margin-bottom: 2%;
+}
+
+.sub-heading_p {
+  padding-bottom: 30px; 
+  margin: 2% 3% 30px 3%;
+  border-bottom: double 7px rgb(43, 43, 94);  
+}
+
+.contact {
+  padding: 0;
+}
+
+.newsletter-section {
+  background: rgb(249, 245, 225);
+  padding-top: 20px;
+  border-top: solid 2px rgb(40, 40, 58);
+  margin-top: 1em;
+}
+
+.newsletter {
+  min-width: 304px;
+}
+
+/*Media Query*/
+
+@media screen and (min-width:768px) {
+  .secheading-1 {
+    margin-left: 112px;
+  }
+
+  .container {
+    width: 70%;
+  }
+
+  .container .flex-pair {
+    display: flex;
+    flex-direction: row;
+    margin: initial;
+  }
+  
+  .container input, 
+  .container select {
+    flex-grow: 1;
+    flex-basis: 75%;
+  }
+  
+  .container label {
+    flex-basis: 25%;
+    height: 40px;
+    margin: auto 0;
+  }
+
+  input[type="text"], select {
+    margin: initial;
+  }
+
+  label[for="full-name"], 
+  input[id="full-name"] {
+    margin-top: 20px;
+  }
+
+  .sub-heading,
+  .sub-heading_p {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #zip {
+    margin-right: initial;
+    max-width: 25%;
+  }
+
+  .newsletter-section, 
+  button {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  textarea {
+    width: 100%;
+  }  
+
+  button {
+    margin-left: 15%;
+  }
+}
